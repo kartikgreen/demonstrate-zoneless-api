@@ -42,5 +42,3 @@ export class ClickZonelessDirective implements OnInit, OnDestroy {
     );
   }
 }
-
-// console output: onClick
