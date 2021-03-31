@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { AfterViewChecked, Component, NgZone } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "my-app",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
-export class AppComponent {
-  title = 'change-detection';
+export class AppComponent implements AfterViewChecked {
+
+  constructor(private readonly zone: NgZone) { }
+
+  onClick() {
+    console.log("onClick event...");
+  }
+
+  ngAfterViewChecked() {
+    console.log("CD performed");
+  }
 }
