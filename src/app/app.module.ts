@@ -5,6 +5,7 @@ import { ClickZonelessDirective } from './click-zoneless.directive';
 import { HighlightDirective } from './highlight.directive';
 import { ZonelessEventPluginService } from './zoneless-event-plugin.service';
 import { TooltipDirective } from './tooltip.directive';
+import { ParentContainerComponent } from './parent-container/parent-container.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { TooltipDirective } from './tooltip.directive';
     AppComponent,
     ClickZonelessDirective,
     HighlightDirective,
-    TooltipDirective
+    TooltipDirective,
+    ParentContainerComponent
   ],
   imports: [
     BrowserModule

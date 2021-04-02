@@ -15,7 +15,7 @@ export class TooltipDirective implements OnInit {
 
   private setupTooltip() {
     tippy(this.el.nativeElement, {
-      content: "Bazuga smokin!"
+      content: "Bazuga!"
     });
   }
 }
